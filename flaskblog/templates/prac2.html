@@ -1,0 +1,18 @@
+<h1>PRACTICE TEST 2</h1>
+<i>From Jo Ann Beard's essay, "Werner"</i><br><br>
+Werner Hoeflich spent the evening at his catering job, making white-wine spritzers and mixing vodka with Tab in a spacious apartment overlooking Central Park. There were orchids, thick rugs, a dog with long blond hair. He walked home late from the subway afterward, along the gated and padlocked streets of the Upper East Side. The trees on his block were scrawny and impervious, like invalid aunts. <br><br>
+Once he had seen a parakeet in one of those trees, staring down at him, shifting from foot to foot. The bird had sharpened both sides of its beak on the branch and then made a veering, panicky flight to a windowsill far above. Most of Werner's metaphorical moments were painterly - the juxtaposing of the wild bird and the tame tree, the shimmer of the periwinkle, the splurt of titanium white that fell from it onto the pavement. He loved New York for its simple surprises, although in truth, Oregon and Iowa and Arizona and everywhere else had simple surprises as well. Cantaloupe-colored sunrises, banded cows, Dairy Queens, all kinds of things that didn't include black plastic mountains of trash and the smell of dog urine.
+<br><br>
+<form action='/verbal/verbal_prac/prac2/score' method='POST' style="color:black;">
+    <ol>
+        {% for i in q %}
+            <li>{{i}} </li>
+            {% for j in o[i] %}
+                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
+                <br>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </ol>
+    <input type="submit" value="Submit" >
+</form>

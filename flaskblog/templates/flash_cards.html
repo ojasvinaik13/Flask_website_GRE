@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+  body{
+    background: #3C5377;
+    }
+.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:240px; height:200px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+</style>
+</head>
+
+<body style="margin-left: 50px; font-family: montserrat, sans-serif;">
+    {% extends "layout2.html" %}
+    {%  block content %}
+  <br><br>
+  <h1 style="color: black; background-color: #3498db;text-align: center;">IMPORTANT GRE WORDS</h1>
+  <br><br>
+<div>
+<div class="flip3D">
+  <div class="back"><h5>in existence</h5><p><i>Few documents antedating the advent of papyrus are extant today</i></p></div>
+  <div class="front"><h1>Extant (adj.)</h1><p>Please see overleaf for more details.</p></div>
+</div>
+<div class="flip3D">
+    <div class="front"><h1>Ephemeral (adj.)</h1><p>Please see overleaf for more details.</p></div>
+  
+    <div class="back"><h5>short-lived</h5><p><i>Youtube has made fame truly ephemeral. Just ask Rebecca Black.</i></p>
+</div>
+</div>
+<div class="flip3D">
+    <div class="front"><h1>Capricious (adj.)</h1><p>Please see overleaf for more details.</p></div>
+    
+    <div class="back"><h5>unpredictable, whimsical</h5><p><i>Because Mario was so capricious his friends felt they could not rely on him.</i></p>
+    </div>
+</div>
+</div>
+<div>
+<div class="flip3D">
+    <div class="front"><h1>Corroborate (v.)</h1><p>Please see overleaf for more details.</p></div>
+      
+    <div class="back"><h5>to confirm, make stronger</h5><p><i>Three witnesses were able to corroborate Lucy’s alibi that she had been at the bowling alley at the time of the murder.</i></p>
+    </div>
+</div>
+<div class="flip3D">
+    <div class="front"><h1>Loquacious (adj.)</h1><p>Please see overleaf for more details.</p></div>
+        
+    <div class="back"><h5>talkative</h5><p><i>Carl was so loquacious his friends usually didn’t like to watch a movie with him.</i></p>
+  </div>
+  </div>
+  <div class="flip3D">
+    <div class="front"><h1>Esoteric (adj)</h1><p>Please see overleaf for more details.</p></div>
+          
+    <div class="back"><h5>known to a select few</h5><p><i>Many jazz artists once deemed esoteric have emerged due to the greater access users have to avant-garde music on-line.</i></p>
+    </div>
+  </div>
+</div>
+  <div class="flip3D">
+      <div class="front"><h1>Erudite (adj.)</h1><p>Please see overleaf for more details.</p></div>
+            
+      <div class="back"><h5>scholarly</h5><p><i>A Rhodes Scholar, Maxine was a true erudite, and a formidable opponent on Jeopardy</i></p>
+      </div>
+    </div>
+  <div class="flip3D">
+      <div class="front"><h1>Pragmatic (adj.)</h1><p>Please see overleaf for more details.</p></div>
+              
+      <div class="back"><h5>practical</h5><p><i>Edna never cared for abstract thinking and preferred the pragmatic world of business, in which every action, ideally, has an intended consequence.</i></p>
+      </div>
+  </div>
+  <div class="flip3D">
+      <div class="front"><h1>Soporific (adj.)</h1><p>Please see overleaf for more details.</p></div>
+                
+      <div class="back"><h5>inducing sleep</h5><p><i>Professor Moore’s lectures were soporific to the point that students, before they nodded off in class, would usually quip, “It’s time for Professor Bore.”</i></p>
+      </div>
+  </div>
+  
+  <div class="flip3D">
+      <div class="front"><h1>Sanguine (adj.)</h1><p>Please see overleaf for more details.</p></div>
+                
+      <div class="back"><h5> cheerful; optimistic</h5><p><i>A Yale graduate with a 4.0, she was sanguine about finding a job right out of college.</i></p>
+      </div>
+  </div>
+  <div class="flip3D">
+        <div class="front"><h1>Enervate (v.)</h1><p>Please see overleaf for more details.</p></div>
+                  
+        <div class="back"><h5>to weaken; drain the energy from</h5><p><i>Sitting in the windowless room, the tropical humidity soaking through the walls, I was enervated before noon.</i></p>
+        </div>
+    </div>
+    <div class="flip3D">
+            <div class="front"><h1>Magnanimous (adj.)</h1><p>Please see overleaf for more details.</p></div>
+                      
+            <div class="back"><h5>big-hearted; generous</h5><p><i>Upon receiving his first Wall Street paycheck, Jerry was so magnanimous he not only bought his Mom a car, he bought his Dad one too.</i></p>
+            </div>
+        </div>
+        <div class="flip3D">
+                <div class="front"><h1>Mercurial(adj.) </h1><p>Please see overleaf for more details.</p></div>
+                          
+                <div class="back"><h5>Changing one’s personality often and unpredictably.</h5><p><i>One never knew exactly what the professor’s class would be like; he was so mercurial that many of his students thought of him as two different people.</i></p>
+                </div>
+            </div>
+            <div class="flip3D">
+                    <div class="front"><h1>Belligerent (adj.) </h1><p>Please see overleaf for more details.</p></div>
+                              
+                    <div class="back"><h5>Inclined to fighting</h5><p><i>After a few drinks Stevie was convivial; after two six-packs he became belligerent, challenging anyone around him to a head-butting contest.</i></p>
+                    </div>
+                </div>
+  {%  endblock content %}
+</body>
+
+</html> 

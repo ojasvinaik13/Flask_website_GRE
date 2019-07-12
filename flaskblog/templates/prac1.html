@@ -1,0 +1,18 @@
+<h1>PRACTICE TEST 1</h1>
+<i>In this excerpt from his editor's introduction to The Best American Essays 2007, David Foster Wallace explains the basic criterion upon which he selected the essays to include in the collection.
+    </i><br><br>
+    I tend, as a reader, to prize and admire clarity, precision, plainness, lucidity, and the sort of magical compression that enriches instead of vitiates. Someone's ability to write this way, especially in nonfiction, fills me with envy, and awe. That might help explain why a fair number of Best American Essay pieces tend to be short, terse, and informal in usage/syntax. Readers who enjoy noodling about genre might welcome the news that several of this year's Best Essays are arguably more like causeries or propos than like essays per se, although one could counterargue that these pieces tend, in their essential pithiness, to be closer to what's historically been meant by 'essay.' Personally, I find taxonomic arguments like this dull and irrelevant. What does seem relevant is to assure you that none of the shorter essays in the collection were included merely because they were short. Limpidity, compactness, and an absence of verbal methane were simply part of what made these pieces valuable; and I think I tried, as the Decider, to use overall value as the prime triage - and filtering mechanism in selecting this year's top essays.
+    <br><br>
+<form action='/verbal/verbal_prac/prac1/score' method='POST' style="color:black;">
+    <ol>
+        {% for i in q %}
+            <li>{{i}} </li>
+            {% for j in o[i] %}
+                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
+                <br>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </ol>
+    <input type="submit" value="Submit" >
+</form>

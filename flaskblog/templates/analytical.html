@@ -1,0 +1,73 @@
+{% extends "layout2.html" %}
+
+{% block content %}
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    
+{% endblock content %}
+
+{% block analytical %}
+
+<div class="links">
+    <nav>
+      <ul>
+         <li> <a href=" {{ url_for('analytical') }} ">Analytical Articles</a> </li>
+         <li> <a href=" {{ url_for('solved1') }} ">Solved Questions</a> </li>
+         <li> <a href=" {{ url_for('sample1') }} ">practice Questions</a> </li>
+      </ul>
+    </nav>
+</div>
+
+<div class="testimonial-section">
+
+    <div class="inner-width">
+        
+      <h1>AWA - Analytical Writing Assesment</h1>
+
+      <div class="border">  </div>
+      <p class="swipe"><ins> swipe the articles >>> </ins> </p>
+
+      <div class="slides owl-carousel">
+        {% for question,ans in questions_ans %}
+        <div class="testimonial">
+          <div class="test-info">
+            <img class="test-pic" src=" {{ url_for('static', filename='logo.png') }} " alt="">
+            <div class="test-name">
+              <span>{{ question }}</span>
+              @article{{loop.index }}
+            </div>
+          </div>
+
+          <p>
+            {{ ans|safe}}
+             <br> <br> <hr size="4px" color="black">
+          </p>
+        </div>
+        {% endfor %}
+
+        
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+$(".owl-carousel").owlCarousel({
+margin:10,
+responsiveClass:true,
+responsive:{
+0:{
+items:1
+},
+680:{
+items:2
+},
+960:{
+items:2
+}
+}
+});
+</script>
+
+
+
+
+{% endblock analytical %}

@@ -1,0 +1,13 @@
+<head>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/ver.css') }}">
+</head>
+<body>
+{% extends "layout2.html" %}
+{%  block content %}
+<br>
+<ul>
+<li><a class="btn" href="{{ url_for('voc_quiz1') }}">BEGINNER LEVEL QUIZ</a></li>
+<li><a class="btn" href="{{ url_for('voc_quiz2') }}">ADVANCED LEVEL QUIZ</a></li>
+</ul>
+{%  endblock content %}
+</body>

@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/ver.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+            ul.apply{
+                background: #3498db;
+                padding: 40px;
+                width:100%;
+            }
+            
+        </style>
+</head>
+<body>
+{% extends "layout2.html" %}
+{%  block content %}
+<br>
+<ul>
+<li><a class="btn" href="{{ url_for('prac1') }}">PRACTICE TEST 1</a></li>
+<li><a class="btn" href="{{ url_for('prac2') }}">PRACTICE TEST 2</a></li>
+</ul>
+<br><br><br>
+<ul class="apply" style="list-style-type: none ">
+        <i class='fas fa-check-square' style='font-size:36px'></i><p>Effective practice means actually going in the direction you want to go, and doing so in a relatively efficient manner.</p>
+
+</ul>
+<br><br><br>
+<ul class="apply" style="list-style-type: none ">
+        <i class='fas fa-check-square' style='font-size:36px'></i><p>Making a commitment to practice is essential to maximize the impact of training. </p>
+
+</ul>
+
+
+{%  endblock content %}
+</body>

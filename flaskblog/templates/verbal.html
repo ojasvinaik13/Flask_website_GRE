@@ -1,0 +1,41 @@
+{% extends "layout2.html" %}
+
+{% block content %}
+
+<head>
+    <style>
+        ul.apply{
+            background: #3498db;
+            padding: 40px;
+            width:100%;
+        }
+        ul.apply li{
+            background: #cce5ff;
+            padding: 15px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+<li><a class="btn" href="{{ url_for('vocab') }}">VOCABULARY LIST</a></li>
+<li><a class="btn" href="{{ url_for('verbal_prac') }}">PRACTICE</a></li>
+<li><a class="btn" href="{{ url_for('voc_quiz') }}">QUIZ</a></li>
+<li><a class="btn" href="{{ url_for('flash') }}">FLASH CARDS</a></li>
+</ul>
+<br><br>
+
+    <ul class="apply" style="list-style-type: square ">
+        <li><h1> Know your vocabulary</h1>There is no way around it. To do well on the GRE you have to know your vocabulary. There are plenty of <a href="{{ url_for('vocab') }} " style="color: black">word lists</a> that can help you get started.</li>
+        <li><h1>Speak GRE-ese</h1>The verbal section is not filled with entertaining writing. Far from it. What you’ll get is dry, academic type of passages. The Text Completions (the fill-in-the-blank sentences) will also contain dry writing, much of which is complex and sophisticated.
+            To really wrap your head around such writing, you have to immerse yourself in GRE-level writing.</li>
+        <li> <h1>Learn pacing</h1>All of us have been there—not being able to let go of that difficult question, burning minutes agonizing between (B) and (C). To do well on the test you have to get a sense of pacing, so you don’t spend most of your time on just a few questions.</li>
+        <li><h1>Become a word detective</h1>Everywhere you look, GRE words abound. Listen to some of the words characters use on television (I heard ‘subterfuge’ and ‘disingenuous’ recently); open up your local newspaper. </li>
+        <li><h1>Think as the test writers do</h1>To do well on the verbal section requires more than just knowing a lot of fancy words. You have to make sure not to get trapped by the answer choices. Known as ‘distractors’, wrong answer choices are sneaky. Learn what makes wrong answer choices wrong and right answer choices right. You’ve got to think like the test makers!</li>
+
+    </ul>
+
+
+</body>
+{% endblock content %}

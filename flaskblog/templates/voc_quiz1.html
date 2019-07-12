@@ -1,0 +1,15 @@
+
+<h1>BEGINNER LEVEL VOCABULARY QUIZ</h1>
+<form action='/verbal/voc_quiz_home/voc_quiz1/score' method='POST' style="color:black;">
+    <ol>
+        {% for i in q %}
+            <li>{{i}} </li>
+            {% for j in o[i] %}
+                <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
+                <br>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </ol>
+    <input type="submit" value="Submit" >
+</form>
